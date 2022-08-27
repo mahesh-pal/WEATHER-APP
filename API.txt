@@ -1,0 +1,2 @@
+API key: b9bcf012f3b58dfcd5bdc304023f4a9c
+API endpoints: https://api.weatherstack.com/current?access_key=b9bcf012f3b58dfcd5bdc304023f4a9c&query=28.459497,77.026634
