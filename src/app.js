@@ -8,6 +8,7 @@ const public = path.join(__dirname,'..','public');
 const views = path.join(__dirname,'../templates/views');
 const partials = path.join(__dirname,'../templates/partials');
 
+const port = process.env.PORT || 3000;
 hbs.registerPartials(partials);
 app.set('views', views);
 app.set('view engine', 'hbs'); // setting hbs
@@ -56,6 +57,6 @@ app.get('/weather', (req, res)=>{
 app.get('*', (req, res)=>{
   res.send('This URL is Not yet implemented');
 });
-app.listen(3000, ()=>{
-    console.log(chalk.green.bold(' server started'));
+app.listen(port, ()=>{
+    console.log(chalk.green.bold(' server started at '+port));
 });
